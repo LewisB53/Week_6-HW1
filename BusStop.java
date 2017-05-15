@@ -21,7 +21,10 @@ public class BusStop{
     waiting[pedestriansWaiting()] = person;
   }
 
-
+ public void add(Person person) {
+   int pedestriansWaiting = pedestriansWaiting();
+   waiting[pedestriansWaiting()] = person;
+ }
 
 
 
