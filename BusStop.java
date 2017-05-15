@@ -26,6 +26,17 @@ public class BusStop{
    waiting[pedestriansWaiting()] = person;
  }
 
+ public void empty(Person person) {
+  for (int i = 0; i<waiting.length; i++){
+    waiting[i] = null;
+ }
+
+}
+
+
+
+
+
 
 
 }

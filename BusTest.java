@@ -49,7 +49,7 @@ public class BusTest{
   @Test
   public void canEmptyBusStop(){
     busStop.add(person);
-    busStop.empty();
+    busStop.empty(person);
     assertEquals(0,busStop.pedestriansWaiting());
   }
 
