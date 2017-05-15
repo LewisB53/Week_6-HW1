@@ -1,13 +1,13 @@
 public class BusStop{
-  private Person[] seating;
+  private Person[] waiting;
 
   public BusStop(){
-    this.seating = new Person[10];
+    this.waiting = new Person[10];
   }
 
-  public int passengerCount(){
+  public int pedestriansWaiting(){
     int count = 0;
-    for (Person person : seating){
+    for (Person person : waiting){
       if(person != null) {
         count++;
       }
@@ -15,16 +15,10 @@ public class BusStop{
     return count;
   }
 
-  public boolean isBusFull(){
-    return passengerCount() == seating.length;
-  }
 
-  public void takePassengers(Person person) {
-    if (isBusFull()){
-      return;
-    }
-    int passengerCount = passengerCount();
-    seating[passengerCount()] = person;
+  public void holdPedestrians(Person person) {
+    int pedestriansWaiting = pedestriansWaiting();
+    waiting[pedestriansWaiting()] = person;
   }
 
 

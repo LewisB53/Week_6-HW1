@@ -35,16 +35,16 @@ public class BusTest{
 
 // BusStop Tests
 
-  // @Test
-  // public void BusStopHasPeople(){
-  //   assertEquals(0,busStop.pedestriansWaiting());
-  // }
+  @Test
+  public void BusStopHasPeople(){
+    assertEquals(0,busStop.pedestriansWaiting());
+  }
 
-  // @Test
-  // public void canHoldPedestrians(){
-  //   busStop.takePassengers(person);
-  //   assertEquals(1,busStop.pedestriansWaiting());
-  // }
+  @Test
+  public void canHoldPedestrians(){
+    busStop.holdPedestrians(person);
+    assertEquals(1,busStop.pedestriansWaiting());
+  }
 
   // @Test
   // public void shouldEmptyBellyAfterSleeping(){
