@@ -47,10 +47,11 @@ public class BusTest{
   }
 
   @Test
-  public void canEmptyBusStop(){
+  public void canMoveToBus(){
     busStop.add(person);
-    busStop.empty(person);
+    busStop.loadBus(person);
     assertEquals(0,busStop.pedestriansWaiting());
+    assertEquals(10,bus.passengerCount());
   }
 
 

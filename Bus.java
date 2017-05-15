@@ -1,5 +1,5 @@
 public class Bus{
-  private Person[] seating;
+  public static Person[] seating;
 
   public Bus(){
     this.seating = new Person[10];

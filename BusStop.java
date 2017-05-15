@@ -1,5 +1,5 @@
 public class BusStop{
-  private Person[] waiting;
+  public static Person[] waiting;
 
   public BusStop(){
     this.waiting = new Person[10];
@@ -26,9 +26,11 @@ public class BusStop{
    waiting[pedestriansWaiting()] = person;
  }
 
- public void empty(Person person) {
+ public void loadBus(Person person) {
   for (int i = 0; i<waiting.length; i++){
     waiting[i] = null;
+    Bus.seating[i] = person;
+    System.out.println(person);
  }
 
 }
