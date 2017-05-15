@@ -46,12 +46,12 @@ public class BusTest{
     assertEquals(1,busStop.pedestriansWaiting());
   }
 
-  // @Test
-  // public void shouldEmptyBellyAfterSleeping(){
-  //   bear.eat(salmon);
-  //   bear.sleep();
-  //   assertEquals(0,bear.foodCount());
-  // }
+  @Test
+  public void canEmptyBusStop(){
+    busStop.add(person);
+    busStop.empty();
+    assertEquals(0,busStop.pedestriansWaiting());
+  }
 
 
 
